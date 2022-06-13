@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class ExerciseDetail extends Component {
-  render() {
-    return <div>ExerciseDetail</div>;
-  }
+function ExerciseDetail() {
+  return <div>ExerciseDetail</div>;
 }
+
+export default ExerciseDetail;
