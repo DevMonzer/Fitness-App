@@ -5,7 +5,10 @@ import Exercises from "../components/Exercises";
 import SearchExercises from "../components/SearchExercises";
 import HeroBanner from "../components/HeroBanner";
 
-function Home() {
+const Home = () => {
+  const [exercises, setExercises] = useState([]);
+  const [bodyPart, setBodyPart] = useState("all");
+
   return (
     <Box>
       <HeroBanner />
@@ -21,6 +24,6 @@ function Home() {
       />
     </Box>
   );
-}
+};
 
 export default Home;
