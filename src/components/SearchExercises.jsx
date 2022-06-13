@@ -6,7 +6,23 @@ import { exerciseOptions, fetchData } from "../utils/fetchData";
 function SearchExercises() {
   const [search, setSearch] = useState("");
   const [exercises, setExercises] = useState([]);
+  const [bodyParts, setBodyParts] = useState([]);
 
+  // Fetch exerciese categories
+  useEffect(() => {
+    const fetchExercisesData = async () => {
+      const bodyPartsData = await fetchData(
+        "https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
+        exerciseOptions
+      );
+
+      setBodyParts(["all", ...bodyPartsData]);
+    };
+
+    fetchExercisesData();
+  }, []);
+
+  // Fetch exerciese by search field
   const handleSearch = async () => {
     if (search) {
       const exercisesData = await fetchData(
