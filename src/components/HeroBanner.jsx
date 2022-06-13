@@ -42,6 +42,17 @@ const HeroBanner = () => {
           Explore Exercises
         </a>
       </Stack>
+      <Typography
+        fontWeight={600}
+        color="#FF2625"
+        sx={{
+          opacity: "0.1",
+          display: { lg: "block", xs: "none" },
+          fontSize: "200px",
+        }}
+      >
+        Exercise
+      </Typography>
     </Box>
   );
 };
