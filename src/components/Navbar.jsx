@@ -7,7 +7,11 @@ import Logo from "../assets/images/Logo.png";
 export default class Navbar extends Component {
   render() {
     return (
-      <Stack>
+      <Stack
+        direction="row"
+        justifyContent="space-around"
+        sx={{ gap: { sm: "122px", xs: "40px" } }}
+      >
         <Link to="/">
           <img
             src={Logo}
