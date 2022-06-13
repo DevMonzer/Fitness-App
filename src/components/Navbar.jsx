@@ -10,7 +10,10 @@ export default class Navbar extends Component {
       <Stack
         direction="row"
         justifyContent="space-around"
-        sx={{ gap: { sm: "122px", xs: "40px" } }}
+        sx={{
+          gap: { sm: "122px", xs: "40px" },
+          mt: { sm: "32px", xs: "20px" },
+        }}
       >
         <Link to="/">
           <img
