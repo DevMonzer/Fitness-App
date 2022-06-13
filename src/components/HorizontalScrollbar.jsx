@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 
 import BodyPart from "./BodyPart";
 
-function HorizontalScrollbar({ data }) {
+function HorizontalScrollbar({ data, bodyParts, setBodyPart, bodyPart }) {
   console.log(data);
   return (
     <div>
