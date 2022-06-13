@@ -15,6 +15,16 @@ function Exercises({ exercises, setExercises, bodyPart }) {
       >
         Showing Results
       </Typography>
+      <Stack
+        direction="row"
+        sx={{ gap: { lg: "107px", xs: "50px" } }}
+        flexWrap="wrap"
+        justifyContent="center"
+      >
+        {/* {currentExercises.map((exercise, idx) => (
+          <ExerciseCard key={idx} exercise={exercise} /> 
+        {/* ))} */}
+      </Stack>
     </Box>
   );
 }
