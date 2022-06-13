@@ -1,5 +1,7 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+
+import BodyPart from "./BodyPart";
 
 function HorizontalScrollbar({ data }) {
   console.log(data);
@@ -12,7 +14,7 @@ function HorizontalScrollbar({ data }) {
           title={item.id || item}
           m="0 40px"
         >
-          {item}
+          <BodyPart item={item} bodyPart={bodyPart} setBodyPart={setBodyPart} />
         </Box>
       ))}
     </div>
