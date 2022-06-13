@@ -131,3 +131,9 @@ body {
     height: 300px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .exercise-card {
+    width: 280px;
+  }
+}
