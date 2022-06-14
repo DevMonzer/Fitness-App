@@ -56,7 +56,13 @@ const Detail = ({ exerciseDetail }) => {
                 width: "100px",
                 height: "100px",
               }}
-            ></Button>
+            >
+              <img
+                src={item.icon}
+                alt={bodyPart}
+                style={{ width: "50px", height: "50px" }}
+              />
+            </Button>
           </Stack>
         ))}
       </Stack>
