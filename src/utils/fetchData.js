@@ -13,3 +13,11 @@ export const fetchData = async (url, options) => {
 
   return data;
 };
+
+export const youtubeOptions = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "e90a4b6292msh085108ca2842138p17a80ajsndd281e5fb251",
+    "X-RapidAPI-Host": "youtube-search-and-download.p.rapidapi.com",
+  },
+};
