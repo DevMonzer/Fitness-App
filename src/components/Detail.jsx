@@ -48,7 +48,6 @@ const Detail = ({ exerciseDetail }) => {
         </Typography>
         {extraDetail?.map((item) => (
           <Stack key={item.name} direction="row" gap="24px" alignItems="center">
-            {" "}
             <Button
               sx={{
                 background: "#FFF2DB",
@@ -63,6 +62,12 @@ const Detail = ({ exerciseDetail }) => {
                 style={{ width: "50px", height: "50px" }}
               />
             </Button>
+            <Typography
+              textTransform="capitalize"
+              sx={{ fontSize: { lg: "30px", xs: "20px" } }}
+            >
+              {item.name}
+            </Typography>
           </Stack>
         ))}
       </Stack>
