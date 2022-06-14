@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { Box } from "@mui/material";
+import React from "react";
+import { Typography, Box, Stack } from "@mui/material";
 
 const SimilarExercises = () => {
-  return <Box sx={{ mt: { lg: "96px", xs: "60px" } }}></Box>;
+  return <Box sx={{ mt: { lg: "100px", xs: "0px" } }}></Box>;
 };
 
 export default SimilarExercises;
