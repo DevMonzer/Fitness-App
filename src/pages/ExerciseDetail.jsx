@@ -9,6 +9,20 @@ import SimilarExercises from "../components/SimilarExercises";
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 
 function ExerciseDetail() {
+  const [exerciseDetail, setExerciseDetail] = useState({});
+
+  const { id } = useParams();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    const fetchExercisesData = async () => {
+      const exerciseDbUrl = "https://exercisedb.p.rapidapi.com";
+      const youtubeSearchUrl =
+        "https://youtube-search-and-download.p.rapidapi.com";
+    };
+  }, [id]);
+
   return (
     <Box sx={{ mt: { lg: "96px", xs: "60px" } }}>
       <Detail />
