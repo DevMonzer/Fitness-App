@@ -47,12 +47,17 @@ const Detail = ({ exerciseDetail }) => {
           improve your <br /> mood and gain energy.
         </Typography>
         {extraDetail?.map((item) => (
-          <Stack
-            key={item.name}
-            direction="row"
-            gap="24px"
-            alignItems="center"
-          ></Stack>
+          <Stack key={item.name} direction="row" gap="24px" alignItems="center">
+            {" "}
+            <Button
+              sx={{
+                background: "#FFF2DB",
+                borderRadius: "50%",
+                width: "100px",
+                height: "100px",
+              }}
+            ></Button>
+          </Stack>
         ))}
       </Stack>
     </Stack>
