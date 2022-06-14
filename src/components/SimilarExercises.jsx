@@ -42,6 +42,13 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
         </span>{" "}
         exercises
       </Typography>
+      <Stack direction="row" sx={{ p: 2, position: "relative" }}>
+        {equipmentExercises.length !== 0 ? (
+          <HorizontalScrollbar data={equipmentExercises} />
+        ) : (
+          <Loader />
+        )}
+      </Stack>
     </Box>
   );
 };
