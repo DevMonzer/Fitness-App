@@ -41,6 +41,12 @@ function ExerciseDetail() {
         exerciseOptions
       );
       setTargetMuscleExercises(targetMuscleExercisesData);
+
+      const equimentExercisesData = await fetchData(
+        `${exerciseDbUrl}/exercises/equipment/${exerciseDetailData.equipment}`,
+        exerciseOptions
+      );
+      setEquipmentExercises(equimentExercisesData);
     };
 
     fetchExercisesData();
