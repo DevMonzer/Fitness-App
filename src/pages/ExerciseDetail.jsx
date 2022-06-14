@@ -33,7 +33,7 @@ function ExerciseDetail() {
 
   return (
     <Box sx={{ mt: { lg: "96px", xs: "60px" } }}>
-      <Detail />
+      <Detail exerciseDetail={exerciseDetail} />
       <ExerciseVideos />
       <SimilarExercises />
     </Box>
