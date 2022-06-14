@@ -10,6 +10,7 @@ import { exerciseOptions, fetchData } from "../utils/fetchData";
 
 function ExerciseDetail() {
   const [exerciseDetail, setExerciseDetail] = useState({});
+  const [exerciseVideos, setExerciseVideos] = useState([]);
 
   const { id } = useParams();
 
@@ -26,6 +27,12 @@ function ExerciseDetail() {
         exerciseOptions
       );
       setExerciseDetail(exerciseDetailData);
+
+      const exerciseVideosData = await fetchData(
+        `${youtubeSearchUrl}/search?query=${exerciseDetailData.name} exercise`,
+        youtubeOptions
+      );
+      setExerciseVideos(exerciseVideosData.contents);
     };
 
     fetchExercisesData();
