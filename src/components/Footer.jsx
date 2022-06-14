@@ -20,7 +20,7 @@ const Footer = () => (
       textAlign="center"
       pb="40px"
     >
-      Made with ❤️ by JavaScript Mastery
+      All Rights Reserved {new Date().getFullYear()}.
     </Typography>
   </Box>
 );
