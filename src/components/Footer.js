@@ -20,7 +20,7 @@ const Footer = () => (
       textAlign="center"
       pb="40px"
     >
-      All Rights Reserved {new Date().getFullYear()}.
+      All Righs Reserved 💛 {new Date().getFullYear()}.
     </Typography>
   </Box>
 );
