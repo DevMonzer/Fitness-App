@@ -15,4 +15,4 @@ React Fitness Application watch live ->
 - React js
 - Material UI
 - ExerciseDB API
-- Youtube Search And Download
+- Youtube Search And Download API
