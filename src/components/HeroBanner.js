@@ -32,10 +32,15 @@ const HeroBanner = () => (
       Sweat, Smile <br />
       And Repeat
     </Typography>
-    <Typography fontSize="22px" fontFamily="Alegreya" lineHeight="35px">
+    <Typography
+      sx={{ textAlign: { lg: 'left', xs: 'center' } }}
+      fontSize="22px"
+      fontFamily="Alegreya"
+      lineHeight="35px"
+    >
       Check out the most effective exercises personalized to you
     </Typography>
-    <Stack>
+    <Stack sx={{ m: { lg: '0', xs: '0 20%' } }}>
       <a
         href="#exercises"
         style={{
@@ -60,7 +65,8 @@ const HeroBanner = () => (
       sx={{
         opacity: '0.1',
         display: { lg: 'block', sm: 'none' }, // hide the image on small devices
-        fontSize: '160px',
+        fontSize: { lg: '160px', xs: '70px' },
+        textAlign: { lg: 'left', xs: 'center' },
       }}
     >
       Exercise
