@@ -41,7 +41,19 @@ const HeroBanner = () => (
       Check out the most effective exercises personalized to you
     </Typography>
     {/* <Stack sx={{ m: { lg: '0', md: '0 40%', sm: '0 30%', xs: '0 20%' } }}> */}
-    <Stack sx={{ mx: 'auto', width: 200 }}>
+    <Stack
+      sx={{
+        mx: {
+          lg: '0',
+          md: 'auto',
+          width: 200,
+          sm: 'auto',
+          width: 200,
+          xs: 'auto',
+          width: 200,
+        },
+      }}
+    >
       <a
         href="#exercises"
         style={{
