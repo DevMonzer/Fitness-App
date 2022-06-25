@@ -4,10 +4,8 @@ import { Box, Button, Stack, TextField, Typography } from '@mui/material';
 import HorizontalScrollbar from './HorizontalScrollbar';
 import { exerciseOptions, fetchData } from '../utils/fetchData';
 
-const SearchExercises = () => {
+const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   const [search, setSearch] = useState('');
-  const [exercises, setExercises] = useState([]);
-
   const [bodyParts, setBodyParts] = useState([]);
 
   // Fetching the exercise categories from the exercise API
@@ -21,7 +19,7 @@ const SearchExercises = () => {
       setBodyParts(['all', ...bodyPartsData]);
     };
 
-    console.log(bodyParts);
+    // console.log(bodyParts);
 
     fetchExercisesData();
   }, []);
@@ -96,8 +94,19 @@ const SearchExercises = () => {
           </Button>
         </form>
       </Box>
+      {
+        // After the data has been fetched from the API we pass it to a new component and render it there
+      }
       <Box sx={{ position: 'relative', width: '100%', p: '20px' }}>
-        <HorizontalScrollbar />
+        {
+          // Passing down the data,bodyPart and setBodyPart (props drilling)
+        }
+        <HorizontalScrollbar
+          data={bodyParts}
+          bodyParts
+          setBodyPart={setBodyPart}
+          bodyPart={bodyPart}
+        />
       </Box>
     </Stack>
   );
