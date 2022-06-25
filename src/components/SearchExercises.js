@@ -23,8 +23,8 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   }, []);
 
   // Here is the request to the exercises API to get data from
-  const handleSearch = async e => {
-    e.preventDefault();
+  const handleSearch = async () => {
+    // e.preventDefault();
 
     if (search) {
       const exercisesData = await fetchData(
