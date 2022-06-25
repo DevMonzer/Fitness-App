@@ -14,7 +14,13 @@ const Navbar = () => {
           style={{ width: '48px', height: '48px', margin: '0px 20px' }}
         />
       </Link>
-      <Stack>
+      <Stack
+        direction="row"
+        gap="40px"
+        fontFamily="Alegreya"
+        fontSize="24px"
+        alignItems="flex-end"
+      >
         <Link
           to="/"
           style={{
