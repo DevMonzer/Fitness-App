@@ -16,6 +16,7 @@ const SearchExercises = () => {
         exerciseOptions
       );
 
+      // Exercises search functionality and it targets the name, target, equipment, and bodyPart so if the search is equal to any one of these it'll return the exercise results
       const searchedExercises = exercisesData.filter(
         item =>
           item.name.toLowerCase().includes(search) ||
@@ -26,6 +27,7 @@ const SearchExercises = () => {
 
       window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' });
 
+      // Clearing the search field and updating the exercises array
       setSearch('');
       setExercises(searchedExercises);
     }
