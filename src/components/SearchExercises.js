@@ -7,6 +7,24 @@ const SearchExercises = () => {
   const [search, setSearch] = useState('');
   const [exercises, setExercises] = useState([]);
 
+  const [bodyParts, setBodyParts] = useState([]);
+
+  // Fetching the exercise categories from the exercise API
+  useEffect(() => {
+    const fetchExercisesData = async () => {
+      const bodyPartsData = await fetchData(
+        'https://exercisedb.p.rapidapi.com/exercises/bodyPartList',
+        exerciseOptions
+      );
+
+      setBodyParts(['all', ...bodyPartsData]);
+    };
+
+    console.log(bodyParts);
+
+    fetchExercisesData();
+  }, []);
+
   // Here is the request to the exercises API to get data from
   const handleSearch = async e => {
     e.preventDefault();
@@ -76,6 +94,9 @@ const SearchExercises = () => {
             Search
           </Button>
         </form>
+      </Box>
+      <Box sx={{ position: 'relative', width: '100%', p: '20px' }}>
+        <HorizontalScrollbar />
       </Box>
     </Stack>
   );
