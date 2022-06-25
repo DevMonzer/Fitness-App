@@ -14,6 +14,8 @@ const Home = () => {
       <HeroBanner />
       {
         // Passing down the exercises and the default bodyPart value (all) and the setBodyPart so it can update the bodyPart
+        //
+        // Props drilling but we need to make the changes across the entire app components
       }
       <SearchExercises
         setExercises={setExercises}
