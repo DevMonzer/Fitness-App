@@ -5,16 +5,27 @@ import HeroBannerImage from '../assets/images/banner.jpg';
 
 const HeroBanner = () => (
   <Box
-    sx={{ mt: { lg: '212px', xs: '70px' }, ml: { sm: '50px' } }}
+    sx={{
+      mt: { lg: '212px', xs: '70px' },
+      ml: { sm: '50px' },
+    }}
     position="relative"
     p="20px"
   >
-    <Typography color="#FF2625" fontWeight="600" fontSize="26px">
+    <Typography
+      color="#FF2625"
+      sx={{ textAlign: { lg: 'left', xs: 'center' } }}
+      fontWeight="600"
+      fontSize="26px"
+    >
       Fitness Club
     </Typography>
     <Typography
       fontWeight={700}
-      sx={{ fontSize: { lg: '44px', xs: '40px' } }}
+      sx={{
+        fontSize: { lg: '44px', xs: '40px' },
+        textAlign: { lg: 'left', xs: 'center' },
+      }}
       mb="23px"
       mt="30px"
     >
@@ -48,7 +59,7 @@ const HeroBanner = () => (
       color="#FF2625"
       sx={{
         opacity: '0.1',
-        display: { lg: 'block', xs: 'none' },
+        display: { lg: 'block', sm: 'none' }, // hide the image on small devices
         fontSize: '160px',
       }}
     >
