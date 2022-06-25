@@ -1,3 +1,3 @@
 # React Fitness Application
 
-![React Fitness Application](https://ibb.co/T2tJRT7)
+![React Fitness Application]("https://i.ibb.co/T2tJRT7/cena.jpg")
