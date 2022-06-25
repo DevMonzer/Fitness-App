@@ -1,6 +1,6 @@
 # React Fitness Application
 
-React Fitness Application app watch live ->
+<!-- React Fitness Application app watch live -> -->
 
 ## What to do
 
