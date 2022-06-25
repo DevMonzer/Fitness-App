@@ -5,6 +5,7 @@ import { exerciseOptions, fetchData } from '../utils/fetchData';
 
 const SearchExercises = () => {
   const [search, setSearch] = useState('');
+  const [exercises, setExercises] = useState([]);
 
   // Here is the request to the exercises API to get data from
   const handleSearch = async e => {
