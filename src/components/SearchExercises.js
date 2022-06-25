@@ -19,8 +19,6 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       setBodyParts(['all', ...bodyPartsData]);
     };
 
-    // console.log(bodyParts);
-
     fetchExercisesData();
   }, []);
 
@@ -48,6 +46,8 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       // Clearing the search field and updating the exercises array
       setSearch('');
       setExercises(searchedExercises);
+    } else {
+      console.log('error has occured');
     }
   };
 
@@ -62,37 +62,37 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         Awesome Exercises You <br /> Should Know
       </Typography>
       <Box position="relative" mb="72px">
-        <form onSubmit={handleSearch}>
-          <TextField
-            height="76px"
-            sx={{
-              input: { fontWeight: '700', border: 'none', borderRadius: '4px' },
-              width: { lg: '1170px', xs: '350px' },
-              backgroundColor: '#fff',
-              borderRadius: '40px',
-            }}
-            value={search}
-            onChange={e => setSearch(e.target.value.toLocaleLowerCase())}
-            placeholder="Search Exercises"
-            type="text"
-          />
-          <Button
-            className="search-btn"
-            sx={{
-              bgcolor: '#FF2625',
-              color: '#fff',
-              textTransform: 'none',
-              width: { lg: '173px', xs: '80px' },
-              height: '56px',
-              position: 'absolute',
-              right: '0px',
-              fontSize: { lg: '20px', xs: '14px' },
-            }}
-            onClick={handleSearch}
-          >
-            Search
-          </Button>
-        </form>
+        {/* <form onSubmit={handleSearch}> */}
+        <TextField
+          height="76px"
+          sx={{
+            input: { fontWeight: '700', border: 'none', borderRadius: '4px' },
+            width: { lg: '1170px', xs: '350px' },
+            backgroundColor: '#fff',
+            borderRadius: '40px',
+          }}
+          value={search}
+          onChange={e => setSearch(e.target.value.toLocaleLowerCase())}
+          placeholder="Search Exercises"
+          type="text"
+        />
+        <Button
+          className="search-btn"
+          sx={{
+            bgcolor: '#FF2625',
+            color: '#fff',
+            textTransform: 'none',
+            width: { lg: '173px', xs: '80px' },
+            height: '56px',
+            position: 'absolute',
+            right: '0px',
+            fontSize: { lg: '20px', xs: '14px' },
+          }}
+          onClick={handleSearch}
+        >
+          Search
+        </Button>
+        {/* </form> */}
       </Box>
       {
         // After the data has been fetched from the API we pass it to a new component and render it there
