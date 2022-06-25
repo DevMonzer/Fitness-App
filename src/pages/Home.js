@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <Box>
-      <HeroBanner />
+      {/* <HeroBanner /> */}
       {
         // Passing down the exercises and the default bodyPart value (all) and the setBodyPart so it can update the bodyPart
         //
@@ -21,6 +21,7 @@ const Home = () => {
         setExercises={setExercises}
         bodyPart={bodyPart}
         setBodyPart={setBodyPart}
+        exercises={exercises}
       />
       <Exercises
         setExercises={setExercises}

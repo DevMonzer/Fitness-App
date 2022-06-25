@@ -4,7 +4,12 @@ import { Box, Button, Stack, TextField, Typography } from '@mui/material';
 import HorizontalScrollbar from './HorizontalScrollbar';
 import { exerciseOptions, fetchData } from '../utils/fetchData';
 
-const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
+const SearchExercises = ({
+  exercises,
+  setExercises,
+  bodyPart,
+  setBodyPart,
+}) => {
   const [search, setSearch] = useState('');
   const [bodyParts, setBodyParts] = useState([]);
 

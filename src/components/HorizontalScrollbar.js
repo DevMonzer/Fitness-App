@@ -27,7 +27,7 @@ const RightArrow = () => {
 };
 
 const HorizontalScrollbar = ({ data, bodyPart, setBodyPart }) => {
-  // console.log(data);
+  console.log(bodyPart);
   return (
     <div>
       {data.map(item => {
@@ -37,7 +37,6 @@ const HorizontalScrollbar = ({ data, bodyPart, setBodyPart }) => {
           title={item.id || item}
           m="0 40px"
         >
-          {/* {console.log(item)} */}
           <BodyPart item={item} setBodyPart={setBodyPart} bodyPart={bodyPart} />
         </Box>;
       })}
