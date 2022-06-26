@@ -28,7 +28,7 @@ const RightArrow = () => {
 };
 
 const HorizontalScrollbar = ({ data, bodyParts, bodyPart, setBodyPart }) => {
-  console.log(bodyPart);
+  // console.log(bodyPart);
   return (
     // Make the menu scrollable
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
