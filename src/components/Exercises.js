@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Pagination from '@mui/material/Pagination';
 import { Box, Stack, Typography } from '@mui/material';
 
-import ExerciseCard from './ExerciseCard';
-
 import { exerciseOptions, fetchData } from '../utils/fetchData';
+import ExerciseCard from './ExerciseCard';
+import Loader from './Loader';
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -76,7 +76,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         // The pagination
       }
       <Stack sx={{ mt: { lg: '114px', xs: '70px' } }} alignItems="center">
-        {currentExercises.length > 9 && (
+        {exercises.length > 9 && (
           <Pagination
             color="standard"
             shape="rounded"
