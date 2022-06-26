@@ -10,7 +10,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [exercisesPerPage] = useState(6);
 
-  // Pagination fetched data
+  // Fetched exercises based on click events on the categories elements
   useEffect(() => {
     const fetchExercisesData = async () => {
       let exercisesData = [];
