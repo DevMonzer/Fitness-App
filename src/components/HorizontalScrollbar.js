@@ -6,6 +6,7 @@ import BodyPart from './BodyPart';
 import RightArrowIcon from '../assets/icons/right-arrow.png';
 import LeftArrowIcon from '../assets/icons/left-arrow.png';
 
+// Arrows
 const LeftArrow = () => {
   const { scrollPrev } = useContext(VisibilityContext);
 
@@ -26,7 +27,7 @@ const RightArrow = () => {
   );
 };
 
-const HorizontalScrollbar = ({ data, bodyPart, setBodyPart }) => {
+const HorizontalScrollbar = ({ data, bodyParts, bodyPart, setBodyPart }) => {
   console.log(bodyPart);
   return (
     // Make the menu scrollable
