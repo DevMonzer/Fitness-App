@@ -23,9 +23,28 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         flexWrap="wrap"
         justifyContent="center"
       >
+        {
+          // Listing the exercises in gifs
+        }
         {exercises.map((exercise, idx) => (
           <ExerciseCard key={idx} exercise={exercise} />
         ))}
+      </Stack>
+      {
+        // The pagination
+      }
+      <Stack sx={{ mt: { lg: '114px', xs: '70px' } }} alignItems="center">
+        {exercises.length > 9 && (
+          <Pagination
+            color="standard"
+            shape="rounded"
+            defaultPage={1}
+            count={Math.ceil(exercises.length / exercisesPerPage)}
+            page={currentPage}
+            onChange={paginate}
+            size="large"
+          />
+        )}
       </Stack>
     </Box>
   );
