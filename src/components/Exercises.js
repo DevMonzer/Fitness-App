@@ -68,7 +68,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         {
           // Listing the exercises in gifs
         }
-        {exercises.map((exercise, idx) => (
+        {currentExercises.map((exercise, idx) => (
           <ExerciseCard key={idx} exercise={exercise} />
         ))}
       </Stack>
@@ -76,7 +76,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         // The pagination
       }
       <Stack sx={{ mt: { lg: '114px', xs: '70px' } }} alignItems="center">
-        {exercises.length > 9 && (
+        {currentExercises.length > 9 && (
           <Pagination
             color="standard"
             shape="rounded"
