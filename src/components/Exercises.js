@@ -21,7 +21,9 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         flexWrap="wrap"
         justifyContent="center"
       >
-        results
+        {exercises.map((exercise, i) => (
+          <p key={i}>{exercise.name}</p>
+        ))}
       </Stack>
     </Box>
   );
