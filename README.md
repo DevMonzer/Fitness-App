@@ -22,7 +22,5 @@ https://rapidapi.com/hub
 
 # More Images: 
 <a href="https://ibb.co/GJ4MT1v"><img src="https://i.ibb.co/hMJdfnR/Capture1.jpg" alt="Capture1" border="0"></a>
-<br/>
 <hr/>
-<br/>
 <a href="https://ibb.co/KbGCd3c"><img src="https://i.ibb.co/RYSLfVG/Capture2.jpg" alt="Capture2" border="0"></a>
