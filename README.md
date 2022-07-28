@@ -1,6 +1,6 @@
 # React Fitness Application
 
-Movies app watch live -> not served yet
+Movies app watch live -> https://fitness-phi.vercel.app/
 
 
 ## What to do  
