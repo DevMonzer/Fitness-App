@@ -2,6 +2,7 @@
 
 Movies app watch live -> https://fitness-phi.vercel.app/
 
+<a href="https://ibb.co/X8YnggL"><img src="https://i.ibb.co/5FKQyy4/Capture.jpg" alt="Capture" border="0"></a>
 
 ## What to do  
 1. Clone this repo     
@@ -18,3 +19,8 @@ https://rapidapi.com/hub
 * React js
 * React Router
 * Rapid API 
+
+# More Images: 
+<a href="https://ibb.co/GJ4MT1v"><img src="https://i.ibb.co/hMJdfnR/Capture1.jpg" alt="Capture1" border="0"></a>
+<hr/>
+<a href="https://ibb.co/KbGCd3c"><img src="https://i.ibb.co/RYSLfVG/Capture2.jpg" alt="Capture2" border="0"></a>
