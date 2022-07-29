@@ -1,9 +1,5 @@
 # React Fitness Application
 
-Movies app watch live -> https://fitness-phi.vercel.app/
-
-<a href="https://ibb.co/X8YnggL"><img src="https://i.ibb.co/5FKQyy4/Capture.jpg" alt="Capture" border="0"></a>
-
 ## What to do  
 1. Clone this repo     
 2. Run `npm install` to download the node_modules folder  
